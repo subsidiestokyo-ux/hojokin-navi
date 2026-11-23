@@ -45,6 +45,7 @@ jobs:
         run: python build.py
         env:
           SITE_URL: ${{ vars.SITE_URL }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
 
       - name: 集めたデータを保存（次回の差分判定に使う）
         run: |

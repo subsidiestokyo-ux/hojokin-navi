@@ -19,6 +19,8 @@ DATA = ROOT / "data"
 SITE = ROOT / "site"
 SITE_NAME = "東京の飲食店のための補助金ナビ"
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
+# Google Search Console の所有者確認用（HTMLタグの content の値）。GitHubの Variables で設定する
+GSC_VERIFY = os.environ.get("GOOGLE_SITE_VERIFICATION", "").strip()
 JST = timezone(timedelta(hours=9))
 
 PURPOSE_SLUGS = {
@@ -101,6 +103,8 @@ def merge(rec):
 def page(title, body, desc, depth=0, canonical=""):
     up = "../" * depth
     canon = f'<link rel="canonical" href="{escape(SITE_URL + canonical)}">' if SITE_URL else ""
+    if GSC_VERIFY and depth == 0:
+        canon += f'\n<meta name="google-site-verification" content="{escape(GSC_VERIFY)}">'
     return f"""<!doctype html>
 <html lang="ja">
 <head>
