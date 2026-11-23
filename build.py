@@ -323,7 +323,7 @@ def main():
 <div class="cards">{''.join(card(r, today) for r in low_items)}</div></details>"""
     body = f"""<section class="hero">
   <h1>東京都の飲食店が使える補助金・助成金</h1>
-  <p>募集中の補助金を毎日自動で集めて、店主向けに分かりやすくまとめています。
+  <p>募集中の補助金を毎日更新。店主様向けに分かりやすくまとめています。
   <span class="updated">最終更新：{escape(src['updated_at'])}／掲載 {len(main_items)}件</span></p>
 </section>
 {ward_nav}
