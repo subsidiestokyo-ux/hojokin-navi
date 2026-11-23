@@ -115,6 +115,9 @@ def page(title, body, desc, depth=0, canonical=""):
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(desc)}">
 {canon}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap">
 <link rel="stylesheet" href="{up}style.css">
 </head>
 <body>
@@ -279,7 +282,7 @@ def ward_page(w, main_items, today, updated):
     srcs = "".join(f'<li><a href="{escape(u)}" rel="noopener">{escape(u)}</a></li>' for u in w["sources"])
     note = "区独自の制度の要約はAIで作成しています。" if any(x["ai"] for x in w["programs"]) else ""
     body = f"""<nav class="crumb"><a href="../index.html">一覧</a> › {escape(w['name'])}</nav>
-<section class="hero"><h1>{escape(w['name'])}の飲食店が使える補助金・助成金</h1>
+<section class="hero"><h1><span>{escape(w['name'])}の飲食店が使える</span><span>補助金・助成金</span></h1>
 <p>{escape(w['name'])}独自の制度と、国・東京都の制度をまとめています（{escape(updated)}更新）。</p></section>
 <h2 class="section-title">{escape(w['name'])}独自の制度</h2>
 <div class="cards">{own}</div>
@@ -326,7 +329,7 @@ def main():
         low = f"""<details class="low"><summary>飲食店との相性が低い補助金（{len(low_items)}件）</summary>
 <div class="cards">{''.join(card(r, today) for r in low_items)}</div></details>"""
     body = f"""<section class="hero">
-  <h1>東京都の飲食店が使える補助金・助成金</h1>
+  <h1><span>東京都の飲食店が使える</span><span>補助金・助成金</span></h1>
   <p>募集中の補助金を毎日更新。店主様向けに分かりやすくまとめています。
   <span class="updated">最終更新：{escape(src['updated_at'])}／掲載 {len(main_items)}件</span></p>
 </section>
@@ -359,7 +362,7 @@ document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', ()
         rs.sort(key=lambda r: (FIT_RANK.get(r["restaurant_fit"], 2), r.get("end") or "9999"))
         lst = "".join(card(r, today, up="../") for r in rs) or "<p>現在、募集中のものはありません。</p>"
         body = f"""<nav class="crumb"><a href="../index.html">一覧</a> › {escape(purpose)}</nav>
-<section class="hero"><h1>{escape(purpose)}に使える補助金・助成金</h1>
+<section class="hero"><h1><span>{escape(purpose)}に使える</span><span>補助金・助成金</span></h1>
 <p>東京都の飲食店向け／募集中 {len(rs)}件（{escape(src['updated_at'])}更新）</p></section>
 <div class="cards">{lst}</div>
 {line_box()}"""
