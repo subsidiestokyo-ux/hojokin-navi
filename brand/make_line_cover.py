@@ -1,5 +1,5 @@
 """LINE公式アカウントのプロフィール背景画像（推奨比率 1000×635 に合わせた 2000×1270）。
-サイト・アイコンと同じ、パステルピンクの方眼 × コバルトブルー。下の中央はアイコンが重なるので空けておく。"""
+サイト・アイコンと同じ、パステルピンクの方眼 × コバルトブルー。LINEのプロフィールでは上下が切れて横長（約2:1）で表示されるため、文字は中央の帯に収める。"""
 import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
@@ -60,17 +60,17 @@ for i in range(0, max(W, H), 50):
     d.line((0, i, W, i), fill=GRID, width=3)
 
 # 飾り（四隅の水玉とキラキラ）
-dots(d, 90, 90, 5, 4, 44, 9, BLUE_MID)
-dots(d, W - 270, H - 260, 5, 4, 44, 9, BLUE_MID)
-sparkle(d, 360, 330, 56, BLUE)
-sparkle(d, 1690, 210, 44, BLUE_MID)
-sparkle(d, 1760, 560, 64, BLUE)
-sparkle(d, 220, 760, 40, BLUE_MID)
+dots(d, 90, 230, 5, 4, 44, 9, BLUE_MID)
+dots(d, W - 270, 900, 5, 4, 44, 9, BLUE_MID)
+sparkle(d, 330, 470, 56, BLUE)
+sparkle(d, 1700, 300, 44, BLUE_MID)
+sparkle(d, 1720, 640, 64, BLUE)
+sparkle(d, 200, 860, 40, BLUE_MID)
 
 # 見出し
-ctext(d, W / 2, 140, "東京都の飲食店のための", 84, BLUE, stroke=3)
-ctext(d, W / 2, 280, "わかりやすい", 120, BLUE, stroke=5, shadow=[(12, BLUE_MID), (6, WHITE)])
-ctext(d, W / 2, 430, "補助金ナビ", 190, BLUE, stroke=8, shadow=[(16, BLUE_MID), (8, WHITE)])
+ctext(d, W / 2, 270, "東京都の飲食店のための", 84, BLUE, stroke=3)
+ctext(d, W / 2, 400, "わかりやすい", 120, BLUE, stroke=5, shadow=[(12, BLUE_MID), (6, WHITE)])
+ctext(d, W / 2, 540, "補助金ナビ", 190, BLUE, stroke=8, shadow=[(16, BLUE_MID), (8, WHITE)])
 
 # 特長のバッジ
 labels = ["毎日更新", "23区の制度も", "LINEで無料通知"]
@@ -78,22 +78,19 @@ widths = [d.textlength(t, font=font(58)) + 90 for t in labels]
 gap = 70
 x = W / 2 - (sum(widths) + gap * (len(labels) - 1)) / 2
 for t, w in zip(labels, widths):  # 3つを等間隔に並べる
-    pill(d, x + w / 2, 760, t)
+    pill(d, x + w / 2, 890, t)
     x += w + gap
-# 下の中央（アイコンが重なる場所）は空けておく
 
 img.save(OUT / "line_cover.png")
 small = img.resize((1000, 635), Image.LANCZOS)
 small.save(OUT / "line_cover_1000x635.png")
-# アイコンが重なったときの見え方の確認用（実際の表示位置は目安）
-prev = small.copy()
-icon = Image.open(OUT / "line_icon_memo.png").resize((220, 220), Image.LANCZOS)
-mask = Image.new("L", (220, 220), 0)
-ImageDraw.Draw(mask).ellipse((0, 0, 219, 219), fill=255)
-ring = Image.new("RGB", (232, 232), WHITE)
-rmask = Image.new("L", (232, 232), 0)
-ImageDraw.Draw(rmask).ellipse((0, 0, 231, 231), fill=255)
-prev.paste(ring, (500 - 116, 635 - 150), rmask)
-prev.paste(icon, (500 - 110, 635 - 144), mask)
-prev.save(OUT / "line_cover_preview.png")
+# 確認用プレビュー：LINEで見える範囲（中央の約2:1の帯）以外を暗くする。※LINEにはこのプレビューではなく line_cover_1000x635.png を設定する
+prev = small.convert("RGBA")
+shade = Image.new("RGBA", prev.size, (0, 0, 0, 0))
+sd = ImageDraw.Draw(shade)
+vis_h = int(1000 / 2.03)
+top = (635 - vis_h) // 2
+sd.rectangle((0, 0, 1000, top), fill=(0, 0, 0, 110))
+sd.rectangle((0, top + vis_h, 1000, 635), fill=(0, 0, 0, 110))
+Image.alpha_composite(prev, shade).convert("RGB").save(OUT / "line_cover_check_visible_area.png")
 print("ok")
