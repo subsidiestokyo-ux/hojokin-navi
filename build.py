@@ -212,7 +212,10 @@ def detail_page(r, today):
 def load_wards():
     """data/wards（集めた本文）と data/ward_summaries（AI要約）を合わせて、区ごとの制度リストにする"""
     wards = []
-    for p in sorted((DATA / "wards").glob("*.json")):
+    order = [w["slug"] for w in json.loads((ROOT / "wards.json").read_text(encoding="utf-8"))]
+    files = sorted((DATA / "wards").glob("*.json"),
+                   key=lambda f: order.index(f.stem) if f.stem in order else len(order))
+    for p in files:  # wards.json の並び順（千代田区→江戸川区）で並べる
         w = json.loads(p.read_text(encoding="utf-8"))
         sp = DATA / "ward_summaries" / p.name
         sm = json.loads(sp.read_text(encoding="utf-8")) if sp.exists() else {"items": {}, "pages": {}}

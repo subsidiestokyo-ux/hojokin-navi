@@ -1,28 +1,20 @@
 [
   {
-    "slug": "shinjuku",
-    "name": "新宿区",
+    "slug": "chiyoda",
+    "name": "千代田区",
     "sources": [
       {
-        "url": "https://www.city.shinjuku.lg.jp/jigyo/index13.html",
-        "inline": false
-      },
-      {
-        "url": "https://www.city.shinjuku.lg.jp/jigyo/biz00_100007.html",
+        "url": "https://www.city.chiyoda.lg.jp/koho/shigoto/jigyosho/josei/index.html",
         "inline": false
       }
     ]
   },
   {
-    "slug": "shibuya",
-    "name": "渋谷区",
+    "slug": "chuo",
+    "name": "中央区",
     "sources": [
       {
-        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/syoutengaishinkoujigyou/",
-        "inline": false
-      },
-      {
-        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/shoko-sodan/",
+        "url": "https://www.city.chuo.lg.jp/shigoto/kigyoushien/hojokin/index.html",
         "inline": false
       }
     ]
@@ -42,11 +34,25 @@
     ]
   },
   {
-    "slug": "chuo",
-    "name": "中央区",
+    "slug": "shinjuku",
+    "name": "新宿区",
     "sources": [
       {
-        "url": "https://www.city.chuo.lg.jp/shigoto/kigyoushien/hojokin/index.html",
+        "url": "https://www.city.shinjuku.lg.jp/jigyo/index13.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.shinjuku.lg.jp/jigyo/biz00_100007.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "bunkyo",
+    "name": "文京区",
+    "sources": [
+      {
+        "url": "https://www.city.bunkyo.lg.jp/sangyoushigoto/chuushou/hojokin/index.html",
         "inline": false
       }
     ]
@@ -61,6 +67,204 @@
       },
       {
         "url": "https://www.city.taito.lg.jp/bunka_kanko/jigyoukeiei/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "sumida",
+    "name": "墨田区",
+    "sources": [
+      {
+        "url": "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "koto",
+    "name": "江東区",
+    "sources": [
+      {
+        "url": "https://www.city.koto.lg.jp/sangyoshigoto/chusho/hojokin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "shinagawa",
+    "name": "品川区",
+    "sources": [
+      {
+        "url": "https://www.mics.city.shinagawa.tokyo.jp/joseikin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "meguro",
+    "name": "目黒区",
+    "sources": [
+      {
+        "url": "https://www.city.meguro.tokyo.jp/shigoto/kigyoushien/enjo/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "ota",
+    "name": "大田区",
+    "sources": [
+      {
+        "url": "https://www.city.ota.tokyo.jp/sangyo/kogyo/joseikin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "setagaya",
+    "name": "世田谷区",
+    "sources": [
+      {
+        "url": "https://www.city.setagaya.lg.jp/03647/5009.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.setagaya.lg.jp/shigotosangyou/kigyousougyoushien/category/11918.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "shibuya",
+    "name": "渋谷区",
+    "sources": [
+      {
+        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/syoutengaishinkoujigyou/",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/shoko-sodan/",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "nakano",
+    "name": "中野区",
+    "sources": [
+      {
+        "url": "https://www.city.tokyo-nakano.lg.jp/jigyosha/sangyoshinko/josei/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "suginami",
+    "name": "杉並区",
+    "sources": [
+      {
+        "url": "https://www.city.suginami.tokyo.jp/guide/shigoto/chusho/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "toshima",
+    "name": "豊島区",
+    "sources": [
+      {
+        "url": "https://www.city.toshima.lg.jp/000/guide/jigyosha/sangyo.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "kita",
+    "name": "北区",
+    "sources": [
+      {
+        "url": "https://www.city.kita.lg.jp/business/business-support/1011317/index.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.kita.lg.jp/business/business-support/1011317/1011326.html",
+        "inline": true
+      },
+      {
+        "url": "https://www.city.kita.lg.jp/business/business-support/1011317/1017610.html",
+        "inline": true
+      }
+    ]
+  },
+  {
+    "slug": "arakawa",
+    "name": "荒川区",
+    "sources": [
+      {
+        "url": "https://www.city.arakawa.tokyo.jp/jigyousha/jigyouunei/joseikin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "itabashi",
+    "name": "板橋区",
+    "sources": [
+      {
+        "url": "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/index.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/1064981/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "nerima",
+    "name": "練馬区",
+    "sources": [
+      {
+        "url": "https://www.city.nerima.tokyo.jp/jigyoshamuke/jigyosha/shoko/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "adachi",
+    "name": "足立区",
+    "sources": [
+      {
+        "url": "https://www.city.adachi.tokyo.jp/shigoto/chushokigyo/jose/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "katsushika",
+    "name": "葛飾区",
+    "sources": [
+      {
+        "url": "https://www.city.katsushika.lg.jp/business/1000011/1034399/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "edogawa",
+    "name": "江戸川区",
+    "sources": [
+      {
+        "url": "https://www.city.edogawa.tokyo.jp/e093/shigotosangyo/jigyosha_oen/sangyo_jigyosya/jyosei/index.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.edogawa.tokyo.jp/e093/shigotosangyo/jigyosha_oen/sangyo_jigyosya/jyosei/sonota/index.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.edogawa.tokyo.jp/e093/shigotosangyo/jigyosha_oen/sangyo_jigyosya/sangyo_informaiton/joseikin5.html",
         "inline": false
       }
     ]

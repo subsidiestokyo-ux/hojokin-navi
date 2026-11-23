@@ -130,6 +130,13 @@ def main():
                 print("利用上限に達したため、残りは次回に回します")
                 calls = args.limit
                 break
+            except anthropic.BadRequestError as e:
+                if "credit balance" in str(e.message):
+                    print("⚠ APIのクレジット残高が不足しています。チャージ後、次回の実行で残りを要約します")
+                    calls = args.limit
+                    break
+                print(f"  失敗 {x['url']}: {e.status_code} {e.message}", file=sys.stderr)
+                continue
             except anthropic.APIStatusError as e:
                 print(f"  失敗 {x['url']}: {e.status_code} {e.message}", file=sys.stderr)
                 continue

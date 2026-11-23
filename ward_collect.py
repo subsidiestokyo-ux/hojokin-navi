@@ -28,7 +28,7 @@ MAX_ITEMS = 30        # 1区あたりに読む制度ページの上限
 
 PICK = re.compile(r"補助|助成|奨励|支援金|利子補給")
 # 制度そのものではないリンク（総合案内・相談・外部の判定サイトなど）
-SKIP = re.compile(r"^(補助金|助成金|補助金・助成金|助成金・補助金|助成事業|補助事業)$|相談|自動判定|国や都|関係団体|申請する前に|一覧|ガイド|よくある")
+SKIP = re.compile(r"^(補助金|助成金|補助金・助成金|助成金・補助金|助成事業|補助事業|各種補助金|各種助成金|融資・助成|事業者向けの助成金)$|相談|自動判定|自動診断|診断・検索|検索システム|国や都|関係団体|申請する前に|一覧|ガイド|よくある")
 CLOSED = re.compile(r"受付終了|募集終了|申込受付終了|受付は終了|終了しました|【終了】")
 
 _robots = {}
@@ -88,7 +88,8 @@ def pick_links(page_html, base):
         if not text or len(text) > 80 or not PICK.search(text) or SKIP.search(text):
             continue
         url = urllib.parse.urljoin(base, m.group(1))
-        if url.startswith("http"):
+        # 区以外のサイト（国・都・公社など）へのリンクは、区独自の制度ではないので除く
+        if url.startswith("http") and urllib.parse.urlparse(url).netloc == urllib.parse.urlparse(base).netloc:
             out.append({"title": text, "url": url})
     return out
 
