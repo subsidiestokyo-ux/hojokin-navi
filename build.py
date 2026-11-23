@@ -17,7 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 SITE = ROOT / "site"
-SITE_NAME = "東京の飲食店のための補助金ナビ"
+SITE_NAME = "わかりやすい補助金ナビ"
+SITE_TAGLINE = "東京都の飲食店向け"
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 # Google Search Console の所有者確認用（HTMLタグの content の値）。GitHubの Variables で設定する
 GSC_VERIFY = os.environ.get("GOOGLE_SITE_VERIFICATION", "").strip()
@@ -117,7 +118,7 @@ def page(title, body, desc, depth=0, canonical=""):
 </head>
 <body>
 <header class="site-header">
-  <a class="logo" href="{up}index.html">{escape(SITE_NAME)}</a>
+  <a class="logo" href="{up}index.html">{escape(SITE_NAME)}<span class="tagline">{escape(SITE_TAGLINE)}</span></a>
   <a class="cta" href="{up}index.html#line">新着をLINEで受け取る</a>
 </header>
 <main>
@@ -321,7 +322,7 @@ def main():
         low = f"""<details class="low"><summary>飲食店との相性が低い補助金（{len(low_items)}件）</summary>
 <div class="cards">{''.join(card(r, today) for r in low_items)}</div></details>"""
     body = f"""<section class="hero">
-  <h1>東京の飲食店が使える補助金・助成金</h1>
+  <h1>東京都の飲食店が使える補助金・助成金</h1>
   <p>募集中の補助金を毎日自動で集めて、店主向けに分かりやすくまとめています。
   <span class="updated">最終更新：{escape(src['updated_at'])}／掲載 {len(main_items)}件</span></p>
 </section>
@@ -340,7 +341,7 @@ document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', ()
 }}));
 </script>"""
     (SITE / "index.html").write_text(page(
-        f"東京の飲食店が使える補助金・助成金一覧（{today:%Y年%-m月}更新）｜{SITE_NAME}", body,
+        f"【東京都の飲食店向け】補助金・助成金一覧（{today:%Y年%-m月}更新）｜{SITE_NAME}", body,
         "東京都の飲食店が使える、募集中の補助金・助成金を締切が近い順にまとめています。毎日自動更新。",
         canonical="/index.html"), encoding="utf-8")
 
@@ -359,7 +360,7 @@ document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', ()
 <div class="cards">{lst}</div>
 {line_box()}"""
         (SITE / "p" / f"{slug}.html").write_text(page(
-            f"{purpose}に使える補助金・助成金｜東京の飲食店向け（{today:%Y年%-m月}）", body,
+            f"【東京都の飲食店向け】{purpose}に使える補助金・助成金（{today:%Y年%-m月}）｜{SITE_NAME}", body,
             f"東京都の飲食店が{purpose}に使える、募集中の補助金・助成金の一覧です。", depth=1,
             canonical=f"/p/{slug}.html"), encoding="utf-8")
 
