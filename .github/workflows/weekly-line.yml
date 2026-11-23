@@ -1,0 +1,45 @@
+# 毎週月曜 8:00（日本時間）に、LINEの友だちへ「今週の新着」と「締切が近い補助金」を送る
+# （毎朝6時の daily-update で最新データになった後に動く）
+name: weekly-line
+
+on:
+  schedule:
+    - cron: "0 23 * * 0"   # UTC 日曜 23:00 = 日本時間 月曜 8:00
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "送らずに文面だけ確認する"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: LINEに送る
+        run: python line_notify.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: 送信記録を保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/line_sent.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "data: LINE送信記録"
+          git pull --rebase -q
+          git push
