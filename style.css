@@ -127,6 +127,10 @@ summary { cursor: pointer; font-weight: 700; }
 }
 .line-box h2 { font-size: 18px; margin: 0 0 6px; }
 .line-box p { margin: 0; }
+.line-button {
+  display: inline-block; margin-top: 10px; background: var(--line-green); color: #fff; text-decoration: none;
+  font-weight: 700; padding: 10px 22px; border-radius: 999px;
+}
 .soon { color: var(--muted); font-size: 14px; margin-top: 6px !important; }
 
 .wards { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0 0; font-size: 14px; }

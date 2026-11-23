@@ -19,6 +19,7 @@ DATA = ROOT / "data"
 SITE = ROOT / "site"
 SITE_NAME = "わかりやすい補助金ナビ"
 SITE_TAGLINE = "東京都の飲食店向け"
+LINE_URL = "https://lin.ee/vPcjVOe"  # LINE公式アカウントの友だち追加URL
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 # Google Search Console の所有者確認用（HTMLタグの content の値）。GitHubの Variables で設定する
 GSC_VERIFY = os.environ.get("GOOGLE_SITE_VERIFICATION", "").strip()
@@ -119,7 +120,7 @@ def page(title, body, desc, depth=0, canonical=""):
 <body>
 <header class="site-header">
   <a class="logo" href="{up}index.html">{escape(SITE_NAME)}<span class="tagline">{escape(SITE_TAGLINE)}</span></a>
-  <a class="cta" href="{up}index.html#line">新着をLINEで受け取る</a>
+  <a class="cta" href="{LINE_URL}" target="_blank" rel="noopener">LINEで受け取る</a>
 </header>
 <main>
 {body}
@@ -152,10 +153,10 @@ def card(r, today, up=""):
 
 
 def line_box():
-    return """<section class="line-box" id="line">
-  <h2>新しい補助金が出たら、LINEでお知らせ（無料）</h2>
-  <p>区・業種・やりたいこと（設備の買い替え、キャッシュレス化など）を選ぶと、合う補助金だけが届きます。</p>
-  <p class="soon">準備中です。もうすぐ登録できるようになります。</p>
+    return f"""<section class="line-box" id="line">
+  <h2>新しい補助金の情報を、LINEでお届けします（無料）</h2>
+  <p>締切が近い補助金や、飲食店に役立つ新着の補助金をお知らせします。友だち追加は無料で、いつでも解除できます。</p>
+  <p><a class="line-button" href="{LINE_URL}" target="_blank" rel="noopener">LINEで友だち追加する</a></p>
 </section>"""
 
 
