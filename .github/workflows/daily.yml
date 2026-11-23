@@ -59,6 +59,21 @@ jobs:
         with:
           path: site
 
+  # APIキーが使えるかを毎朝確認する（費用なし）。使えないとこのジョブが失敗し、
+  # GitHubから通知メールが届く。サイトの更新・公開はこのジョブと関係なく続く。
+  keycheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: APIキーの確認
+        run: python check_key.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
