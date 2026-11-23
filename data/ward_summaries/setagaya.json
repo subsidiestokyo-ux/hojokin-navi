@@ -1,4 +1,153 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.setagaya.lg.jp/03647/11321.html": {
+   "src_hash": "17375ae8a2c9a001",
+   "summary": {
+    "name": "令和8年度 世田谷区中小事業者経営支援補助金",
+    "headline": "販路拡大や生産性向上の設備導入を半額補助（上限20万・40万円）",
+    "amount": "補助率2分の1（上限20万円または40万円）",
+    "restaurant_examples": [
+     "ネット販売・広告による販路拡大",
+     "業務効率化のための機器・ソフト導入"
+    ],
+    "cautions": [
+     "令和8年度分は予算上限に達したため受付終了"
+    ],
+    "status": "受付終了",
+    "deadline": "受付終了",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "販路・観光・インバウンド",
+     "設備・機器"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/03647/5007.html": {
+   "src_hash": "b5193bf3e7f58ad8",
+   "summary": {
+    "name": "令和8年度 世田谷区知的財産権取得支援補助金",
+    "headline": "特許・商標などの取得費を半額補助（上限20万円）",
+    "amount": "2分の1（上限20万円）",
+    "status": "受付終了",
+    "deadline": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/03647/11320.html": {
+   "src_hash": "4204c3047fff9d82",
+   "summary": {
+    "name": "せたがやソーシャルビジネス支援補助金",
+    "headline": "地域や社会の課題を解決する事業の経費を補助（最大50万円）",
+    "amount": "対象経費の3分の2以内（最大50万円）",
+    "restaurant_examples": [
+     "子ども食堂や高齢者向け配食など、地域課題に取り組む飲食事業"
+    ],
+    "status": "不明",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/03647/10943.html": {
+   "src_hash": "679d2b839c8ee171",
+   "summary": {
+    "name": "令和8年度 世田谷区ビジネスマッチングイベント出展支援事業補助金",
+    "headline": "展示会の出展料を半額補助（上限10万円）",
+    "amount": "2分の1（上限10万円）",
+    "status": "受付終了",
+    "deadline": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/01004/4965.html": {
+   "src_hash": "25a4080ec58f4a1e",
+   "summary": {
+    "name": "世田谷区 政府系金融機関の融資に対する利子補助",
+    "headline": "マル経融資などの利子を区が補助",
+    "who": "日本政策金融公庫のマル経融資などを受けた区内小規模事業者",
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/02074/4963.html": {
+   "src_hash": "a77e4c834d8d0ec8",
+   "summary": {
+    "name": "世田谷区 事業用等駐車場の緑化助成",
+    "headline": "駐車場の植栽・緑化の費用を助成（総額50万円まで）",
+    "amount": "樹木1本あたり3,000〜24,000円以内など（総額上限50万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.setagaya.lg.jp/01004/4971.html": {
+   "src_hash": "51ddd18d0a07ef67",
+   "summary": {
+    "name": "産業活性化事業者育成支援事業補助金",
+    "headline": "産業団体が行う講習会の費用を助成",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

@@ -1,4 +1,232 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/seisanseiup.html": {
+   "src_hash": "32400b271b41c35b",
+   "summary": {
+    "name": "墨田区生産性向上等支援補助金（LED照明器具導入支援）",
+    "headline": "照明をLEDに替える費用を最大5分の4補助（上限150万円）",
+    "amount": "補助率5分の4（上限150万円）",
+    "restaurant_examples": [
+     "店内・厨房の照明をLEDに交換して電気代を下げる"
+    ],
+    "status": "不明",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "省エネ・脱炭素",
+     "設備・機器"
+    ],
+    "uses": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/smddigital.html": {
+   "src_hash": "c582402c2f8af0c9",
+   "summary": {
+    "name": "墨田区デジタル技術活用支援補助金",
+    "headline": "業務のデジタル化の費用を4分の3補助（上限50万円）。飲食店のセルフオーダーも例示",
+    "amount": "対象経費の4分の3（上限50万円、下限5万円）",
+    "uses": [
+     "ソフトウェア・クラウドサービスの導入",
+     "デジタル機器の導入"
+    ],
+    "restaurant_examples": [
+     "セルフオーダー（モバイルオーダー）の仕組みづくり",
+     "予約・会計システムの導入"
+    ],
+    "cautions": [
+     "申請前にすみだビジネスサポートセンターで事業計画書の作成が必要",
+     "50万円超の発注は原則2社以上の見積もり",
+     "令和9年2月19日までに実績報告できるものが対象"
+    ],
+    "status": "不明",
+    "deadline": "令和8年度の受付期間は区のページで確認が必要",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "IT・キャッシュレス・DX"
+    ],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/koyou_syuurou/hojokin_jinzai.html": {
+   "src_hash": "ddf39f197a3c7709",
+   "summary": {
+    "name": "墨田区人材確保・定着支援補助金",
+    "headline": "就業規則を整えたうえで職場環境を改善する費用を半額補助（上限100万円）",
+    "amount": "補助率2分の1（上限10万円または100万円）",
+    "restaurant_examples": [
+     "従業員の休憩室や更衣室の整備",
+     "熱中症対策の職場環境整備"
+    ],
+    "cautions": [
+     "交付決定前に始めた事業は対象外",
+     "予算に達した時点で受付終了"
+    ],
+    "status": "受付中",
+    "deadline": "令和8年12月21日（必着）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "働き方・賃上げ",
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/syugyokisoku.html": {
+   "src_hash": "cac917a36bb47e1b",
+   "summary": {
+    "name": "墨田区就業規則整備補助金",
+    "headline": "就業規則の作成・見直し費用を半額補助（上限10万円）",
+    "amount": "2分の1（上限10万円）",
+    "restaurant_examples": [
+     "社労士に依頼してアルバイトを含む就業規則を整える"
+    ],
+    "status": "通年・随時",
+    "deadline": "労基署の受付日の翌日から6か月以内（予算に達し次第終了）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "働き方・賃上げ"
+    ],
+    "uses": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/hannkaku.html": {
+   "src_hash": "c5f8b503e859a3bf",
+   "summary": {
+    "name": "墨田区区内生産品等販路拡張補助金",
+    "headline": "区外向けの展示会出展や広告の費用を半額補助（企業は上限20万円）",
+    "amount": "2分の1（企業は上限20万円、創業者は3分の2）",
+    "cautions": [
+     "即売を主な目的とするものは対象外",
+     "申請前に区へ問い合わせが必要"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年3月10日まで（予算に達し次第終了）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/monodukuripuromosyon.html": {
+   "src_hash": "87f4279d9a7bd872",
+   "summary": {
+    "name": "墨田区ものづくりプロモーション推進補助金",
+    "headline": "区のものづくりをPRするイベントを補助",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/jinzai_network/fashion.html": {
+   "src_hash": "26190ff2bcf072de",
+   "summary": {
+    "name": "ファッション産業人材育成支援補助金",
+    "headline": "ファッション関連企業の人材育成を補助（上限15万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/kaihatsu_kaitaku/tizaihojokin.html": {
+   "src_hash": "351bcd3ce568bae3",
+   "summary": {
+    "name": "墨田区知的財産権取得補助金",
+    "headline": "特許・商標などの取得費を半額補助（上限20万円）",
+    "amount": "2分の1（上限20万円）",
+    "restaurant_examples": [
+     "店名やオリジナル商品の商標登録"
+    ],
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/kaihatsu_kaitaku/iraishiken.html": {
+   "src_hash": "b29e8cffe1aace11",
+   "summary": {
+    "name": "墨田区依頼試験等利用補助金",
+    "headline": "都立産業技術研究センターの試験・機器利用料を3分の2補助（上限20万円）",
+    "status": "受付中",
+    "deadline": "令和9年3月31日まで",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.sumida.lg.jp/sangyo_jigyosya/sangyo/hojokin_joseikin/chiikikyosei.html": {
+   "src_hash": "c4939ec61171fb86",
+   "summary": {
+    "name": "墨田区ものづくり企業地域共生推進助成金",
+    "headline": "工場の防音・防臭など操業環境の改善を助成",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

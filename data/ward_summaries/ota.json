@@ -1,4 +1,86 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.ota.tokyo.jp/sangyo/kogyo/joseikin/ricchisdgsjosei.html": {
+   "src_hash": "36d4b0d3beb64c56",
+   "summary": {
+    "name": "大田区企業立地・SDGs促進助成金",
+    "headline": "区内での工場・研究拠点の立地や脱炭素化の投資を助成",
+    "amount": "対象経費の3分の1（上限1,000万円または500万円）",
+    "status": "受付中",
+    "deadline": "令和8年12月末日受付分まで（事前相談が必要）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器",
+     "省エネ・脱炭素"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.ota.tokyo.jp/sangyo/kogyo/joseikin/ricchijosei_kojo-apart.html": {
+   "src_hash": "ab9797f5e7b84653",
+   "summary": {
+    "name": "大田区工場アパート立地助成事業",
+    "headline": "工場アパートの建設を助成（最大5億円）",
+    "amount": "対象経費の4分の1（上限5億円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.ota.tokyo.jp/sangyo/kogyo/joseikin/ricchijosei.html": {
+   "src_hash": "698d539ea8ca7f18",
+   "summary": {
+    "name": "ものづくり工場立地助成事業",
+    "headline": "令和6年3月31日で終了した制度",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.ota.tokyo.jp/sangyo/kogyo/joseikin/keizokuhojo.html": {
+   "src_hash": "f664c783f3bbb418",
+   "summary": {
+    "name": "大田区ものづくり企業立地継続補助事業",
+    "headline": "ものづくり企業の操業環境改善を補助（上限375万円）",
+    "amount": "補助率4分の3（上限375万円）",
+    "status": "受付中",
+    "deadline": "支払いまで令和9年3月15日までに終わるもの",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

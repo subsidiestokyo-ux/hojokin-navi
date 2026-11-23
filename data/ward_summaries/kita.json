@@ -1,4 +1,82 @@
 {
- "items": {},
- "pages": {}
+ "items": {
+  "https://www.city.kita.lg.jp/business/business-support/1011317/1011322.html": {
+   "src_hash": "7a2b7752b14861a4",
+   "summary": {
+    "name": "北区 マル経融資利子補助",
+    "headline": "マル経融資の利子を最大3年間補助",
+    "who": "マル経融資を利用している区内の小規模事業者",
+    "amount": "支払った利子の一部（初回から36回目まで）",
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
+ "pages": {
+  "https://www.city.kita.lg.jp/business/business-support/1011317/1011326.html": {
+   "src_hash": "52001f941617d697",
+   "programs": [
+    {
+     "name": "北区中小企業リスキリング支援事業補助金",
+     "headline": "従業員の研修・資格取得費用の半額を補助（上限20万円）",
+     "amount": "対象経費の2分の1（上限20万円、1万円未満は対象外）",
+     "uses": [
+      "研修・講座の受講料",
+      "資格取得費用"
+     ],
+     "restaurant_examples": [
+      "調理師・食品衛生関係の講習",
+      "接客・外国語研修"
+     ],
+     "cautions": [
+      "交通費・飲食費は対象外",
+      "先着順で予算に達し次第終了"
+     ],
+     "status": "受付中",
+     "deadline": "令和9年3月31日まで（先着順・予算に達し次第終了）",
+     "restaurant_fit": "ふつう",
+     "purposes": [
+      "人材・採用・育成"
+     ],
+     "who": "募集要項で確認が必要",
+     "is_business_subsidy": true,
+     "model": "claude-session"
+    }
+   ]
+  },
+  "https://www.city.kita.lg.jp/business/business-support/1011317/1017610.html": {
+   "src_hash": "d5920edd512ba6d0",
+   "programs": [
+    {
+     "name": "北区中小企業子連れワーク環境整備支援事業補助金",
+     "headline": "子どもを連れて出勤できる職場づくりの費用を半額補助（上限50万円）",
+     "amount": "対象経費の2分の1（上限50万円）",
+     "cautions": [
+      "単価2千円未満の物品・飲食費などは対象外",
+      "予算に達し次第終了"
+     ],
+     "status": "受付中",
+     "deadline": "令和9年3月31日まで（予算に達し次第終了）",
+     "restaurant_fit": "低い",
+     "purposes": [
+      "働き方・賃上げ"
+     ],
+     "uses": [],
+     "restaurant_examples": [],
+     "who": "募集要項で確認が必要",
+     "is_business_subsidy": true,
+     "model": "claude-session"
+    }
+   ]
+  }
+ }
 }

@@ -1,4 +1,135 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062047/1064535/index.html": {
+   "src_hash": "10bb58472245dc43",
+   "summary": {
+    "name": "板橋区ベンチャー企業・起業家支援賃料補助金",
+    "headline": "創業間もない事業者の事務所・店舗の家賃を半額補助（月最大20万円）",
+    "who": "区内に本店・活動実態がある中小企業者で、①新技術等で創業15年以内、②区の認定を受けた創業5年以内、③区の施設を退去後5年度以内のいずれか。フランチャイズ加盟店は対象外",
+    "amount": "賃料の2分の1以内。月額上限20万円（最長36か月）または10万円（最長24か月）",
+    "uses": [
+     "事務所・工場など事業用物件の賃料"
+    ],
+    "restaurant_examples": [
+     "区の創業支援（認定）を受けて開業した店舗の家賃の一部"
+    ],
+    "cautions": [
+     "フランチャイズ加盟店は対象外",
+     "国・都などから賃料補助を受けている場合は対象外",
+     "過去に同じ補助金を受けていると対象外"
+    ],
+    "status": "不明",
+    "deadline": "令和8年度の受付状況は区のページで確認が必要",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "開業・事業承継"
+    ],
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/1064574/index.html": {
+   "src_hash": "69b70baeeab19eae",
+   "summary": {
+    "name": "板橋区ものづくり企業地域共生推進助成金",
+    "headline": "工場の騒音・振動対策など、ものづくり企業の操業環境改善を助成",
+    "amount": "助成対象経費の4分の3以内（上限375万円）ほか区分あり",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/1064579/index.html": {
+   "src_hash": "9857a0e703dfeaca",
+   "summary": {
+    "name": "板橋区製造業設備投資助成金",
+    "headline": "製造業の生産性向上のための設備購入を助成（上限666万円）",
+    "amount": "対象経費の3分の2以内（上限666万円）または2分の1以内（上限500万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062076/1064612.html": {
+   "src_hash": "b35d2cd3d95c032a",
+   "summary": {
+    "name": "商店街活性化事業（補助金）",
+    "headline": "商店街団体が行うイベント・設備整備などへの補助",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/1064981/1064998.html": {
+   "src_hash": "e6635898e20e2612",
+   "summary": {
+    "name": "板橋区 融資の利子補給",
+    "headline": "区のあっせん融資などの利子の一部を区が助成",
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "cautions": [
+     "対象となる融資・条件は区のページで確認が必要"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062046/1064981/1065003.html": {
+   "src_hash": "9b7d510555c28bd3",
+   "summary": {
+    "name": "板橋区 マル経融資利子補給制度",
+    "headline": "日本政策金融公庫のマル経融資の支払利子の一部を補助",
+    "who": "マル経融資を利用している区内の小規模事業者",
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

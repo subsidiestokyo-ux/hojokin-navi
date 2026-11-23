@@ -1,4 +1,356 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1041085.html": {
+   "src_hash": "8029fc1884bcfe95",
+   "summary": {
+    "name": "葛飾区機械設備メンテナンス等助成",
+    "headline": "製造業の機械設備の修理・メンテナンス費を半額補助（上限10万円）",
+    "status": "受付中",
+    "deadline": "令和9年3月15日（必着）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "設備・機器"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1032622/index.html": {
+   "src_hash": "657bcf39ba6f843e",
+   "summary": {
+    "name": "葛飾区デジタル化支援事業費補助金",
+    "headline": "キャッシュレス決済機器などデジタル化の費用を半額補助（上限50万円）",
+    "amount": "対象経費の2分の1（上限50万円、うちハードウェアは上限20万円）",
+    "uses": [
+     "ソフトウェア・クラウドサービス",
+     "ハードウェア購入",
+     "区内店舗のキャッシュレス決済機器の購入費・利用料"
+    ],
+    "restaurant_examples": [
+     "キャッシュレス決済端末の導入",
+     "POSレジ・予約システムの導入"
+    ],
+    "cautions": [
+     "事前にIT相談を受け、診断書の交付を受ける必要あり",
+     "実績報告は令和9年3月31日まで"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年2月26日（必着）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "IT・キャッシュレス・DX"
+    ],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1036547.html": {
+   "src_hash": "a208dded7d03714a",
+   "summary": {
+    "name": "葛飾区人材確保・人材定着支援事業費助成",
+    "headline": "働きやすい職場づくりの工事などを半額助成（上限250万円）",
+    "amount": "対象経費の2分の1（上限250万円、WLB推進企業は300万円）",
+    "restaurant_examples": [
+     "厨房の暑さ対策（空調・換気）の工事",
+     "従業員の休憩スペースの整備"
+    ],
+    "cautions": [
+     "就業規則の作成・改正が条件"
+    ],
+    "status": "不明",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "働き方・賃上げ",
+     "設備・機器"
+    ],
+    "uses": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1034398.html": {
+   "src_hash": "27fd129372e45108",
+   "summary": {
+    "name": "葛飾区中小企業退職金共済掛金補助",
+    "headline": "中退共に新規加入した事業主の掛金の3分の1を補助（年50万円まで）",
+    "status": "不明",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "働き方・賃上げ"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1032239.html": {
+   "src_hash": "98300040cc8dd5b9",
+   "summary": {
+    "name": "葛飾区旅行商品造成事業補助金",
+    "headline": "区内飲食店での食事付きツアーを企画する旅行事業者への補助",
+    "is_business_subsidy": true,
+    "cautions": [
+     "対象は旅行事業者（飲食店は食事の提供先として関わる）"
+    ],
+    "status": "受付中",
+    "deadline": "令和8年12月11日（消印有効）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1031748/index.html": {
+   "src_hash": "6fa376e93d22f22e",
+   "summary": {
+    "name": "葛飾区雇用促進奨励金",
+    "headline": "国の雇用関係助成金を受けた区内事業主に上乗せの奨励金",
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/information/1000084/1030260/1032075/1029109.html": {
+   "src_hash": "dc70a78573f0e044",
+   "summary": {
+    "name": "葛飾区浸水対応型拠点建築物等普及事業補助金",
+    "headline": "集合住宅・大規模小売店舗の水害対策への補助",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004956.html": {
+   "src_hash": "6e8f8cd4ca8888d2",
+   "summary": {
+    "name": "葛飾区製品性能試験費用補助事業",
+    "headline": "製造業の技術指導・性能試験の費用を半額補助",
+    "status": "受付中",
+    "deadline": "令和9年3月26日（必着）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004957.html": {
+   "src_hash": "b9571567c2bc7ce0",
+   "summary": {
+    "name": "葛飾区ホームページ作成費補助",
+    "headline": "ホームページの作成・改修費を半額補助（日本語5万円、外国語8万円など）",
+    "amount": "対象経費の2分の1（日本語5万円、外国語8万円などの上限）",
+    "restaurant_examples": [
+     "お店のホームページを作る",
+     "外国人向けの英語ページを作る"
+    ],
+    "cautions": [
+     "受付順で予算の範囲内",
+     "令和9年3月31日までに完成・実績報告が必要"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年2月26日（必着）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "販路・観光・インバウンド",
+     "IT・キャッシュレス・DX"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004958.html": {
+   "src_hash": "9221579189c618a0",
+   "summary": {
+    "name": "葛飾区見本市出展費補助事業",
+    "headline": "工業製品の見本市出展費を半額補助",
+    "status": "受付中",
+    "deadline": "令和9年2月26日（必着）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004959.html": {
+   "src_hash": "2e0d57d3632d51ba",
+   "summary": {
+    "name": "葛飾区知的所有権取得費補助事業",
+    "headline": "特許・商標などの出願費を半額補助（上限10万円）",
+    "restaurant_examples": [
+     "店名やオリジナル商品の商標登録"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年3月26日（必着）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004960.html": {
+   "src_hash": "d2b6ab9a05f97adc",
+   "summary": {
+    "name": "葛飾区新製品・新技術開発補助事業",
+    "headline": "製造業の研究開発費を補助（令和8年度は6月30日締切）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004961.html": {
+   "src_hash": "29fe4eadaad14729",
+   "summary": {
+    "name": "葛飾区動力プレス機械自主検査補助金",
+    "headline": "動力プレス機械の定期自主検査費を半額補助",
+    "status": "受付中",
+    "deadline": "令和9年3月26日（必着）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1004962.html": {
+   "src_hash": "5912276bbf593463",
+   "summary": {
+    "name": "葛飾区産業人材育成支援補助事業（大学・訓練等）",
+    "headline": "従業員の講座・訓練の費用を補助（上限30万円）",
+    "amount": "負担額の2分の1または授業料の3分の1の低い方（上限30万円）",
+    "restaurant_examples": [
+     "調理技術や接客の講座を従業員が受講する"
+    ],
+    "cautions": [
+     "資格試験の受験料だけは対象外"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年3月26日（必着）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1038067.html": {
+   "src_hash": "518e8b3c21586454",
+   "summary": {
+    "name": "葛飾区産業人材育成支援補助事業（物流・建設事業者支援）",
+    "headline": "物流・建設業の大型免許取得などを補助",
+    "status": "受付中",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.katsushika.lg.jp/business/1000011/1034399/1032212.html": {
+   "src_hash": "95952f70eca80fea",
+   "summary": {
+    "name": "葛飾区ものづくり企業地域共生事業費助成",
+    "headline": "製造業者グループの工場見学・製作体験を補助",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

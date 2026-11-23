@@ -1,4 +1,125 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ecotakesankaten.html": {
+   "src_hash": "bdb4df22b858079d",
+   "summary": {
+    "name": "目黒区 エコ容器・リユース容器の購入等経費補助（令和8年度）",
+    "headline": "テイクアウト容器を紙・木などのエコ容器に替える費用を全額補助（上限6万円）",
+    "who": "目黒区内に店舗または施設がある事業者",
+    "amount": "対象経費の全額（エコ容器包装・リユース容器 各3万円まで、合計上限6万円）",
+    "uses": [
+     "紙・木・竹などのエコ容器包装の購入",
+     "リユース容器の購入"
+    ],
+    "restaurant_examples": [
+     "テイクアウト用のプラ容器を紙容器に切り替える",
+     "繰り返し使えるリユース容器を導入する"
+    ],
+    "cautions": [
+     "令和8年4月1日〜令和9年1月31日に支払った経費が対象",
+     "先着順で予算に達すると期間内でも終了"
+    ],
+    "status": "受付中",
+    "deadline": "令和8年12月25日まで（先着順）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "省エネ・脱炭素"
+    ],
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.meguro.tokyo.jp/sangyoukeizai/shigoto/kigyoushien/r8yushishienkin.html": {
+   "src_hash": "b5d65b21c734c664",
+   "summary": {
+    "name": "目黒区独自「物価高対応等融資支援金」",
+    "headline": "物価高などで国・都の対象融資を受けた事業者に支援金（最大20万円）",
+    "amount": "融資額100万円につき2万円（各融資制度20万円以内）",
+    "who": "令和8年4月1日以降に国・都の対象融資を受けた区内中小企業者",
+    "status": "受付中",
+    "deadline": "令和9年3月31日（必着）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.meguro.tokyo.jp/sangyoukeizai/shigoto/kigyoushien/snshojo.html": {
+   "src_hash": "b765d5db66015f31",
+   "summary": {
+    "name": "目黒区SNS広告宣伝活動費補助金",
+    "headline": "SNS広告の費用の8割を補助（上限10万円）",
+    "amount": "対象経費の10分の8（上限10万円）",
+    "uses": [
+     "SNSの有料広告費",
+     "広告の制作費"
+    ],
+    "restaurant_examples": [
+     "InstagramやLINEで新メニュー・ランチの広告を出す",
+     "広告用の写真・動画の制作"
+    ],
+    "cautions": [
+     "先着25社程度で予算に達し次第終了",
+     "令和9年1月31日までに支払いが完了するものが対象"
+    ],
+    "status": "受付中",
+    "deadline": "令和8年12月28日（消印有効）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.meguro.tokyo.jp/sangyoukeizai/shigoto/kigyoushien/ryouritu.html": {
+   "src_hash": "af471654a48c4ef3",
+   "summary": {
+    "name": "両立支援等助成金（厚生労働省）の案内",
+    "headline": "仕事と育児・介護の両立に取り組む事業主への国の助成金",
+    "cautions": [
+     "国（東京労働局）の制度。詳細は東京労働局のサイトで確認"
+    ],
+    "status": "不明",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "働き方・賃上げ"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.meguro.tokyo.jp/danjobyoudou/kusei/onlineservice/worklifebarancejyosei.html": {
+   "src_hash": "ba3b0e5c52bf50e9",
+   "summary": {
+    "name": "目黒区 ワーク・ライフ・バランス研修会の講師料助成",
+    "headline": "働き方改善の研修会を開くときの講師料を助成（3万円まで）",
+    "amount": "1回3万円以内（年度上限3万円）",
+    "status": "受付中",
+    "deadline": "令和9年2月28日まで（研修の4週間前までに申請）",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "働き方・賃上げ"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

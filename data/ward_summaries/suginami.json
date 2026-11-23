@@ -1,4 +1,99 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.suginami.tokyo.jp/s121/news/25089.html": {
+   "src_hash": "b197338c021f77e0",
+   "summary": {
+    "name": "杉並区 中小企業等デジタル化推進事業助成",
+    "headline": "デジタル機器・システムの導入費を最大4分の3補助（上限50万円）",
+    "amount": "中小企業者3分の2、小規模事業者4分の3（上限50万円）",
+    "restaurant_examples": [
+     "キャッシュレス決済・POSレジの導入",
+     "予約・注文システムの導入"
+    ],
+    "cautions": [
+     "令和8年度分は予算に達したため受付終了"
+    ],
+    "status": "受付終了",
+    "deadline": "受付終了（9月28日）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "IT・キャッシュレス・DX"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.suginami.tokyo.jp/s121/19276.html": {
+   "src_hash": "d1bb3b1487752cd6",
+   "summary": {
+    "name": "杉並区 マル経融資に係る利子補助",
+    "headline": "マル経融資の支払利子の30%を補助",
+    "amount": "支払った利子の30%",
+    "status": "受付中",
+    "deadline": "毎年度4月1日〜12月31日に申請",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.suginami.tokyo.jp/s121/1793.html": {
+   "src_hash": "880ad43f26e4aec5",
+   "summary": {
+    "name": "杉並区 創業スタートアップ助成",
+    "headline": "創業時の事務所・店舗の家賃などを3分の2補助（家賃は最大30万円）",
+    "amount": "助成率3分の2（家賃は月5万円×6か月で上限30万円、ほかの区分は上限20万円）",
+    "uses": [
+     "事業用物件の家賃",
+     "創業時の経費"
+    ],
+    "restaurant_examples": [
+     "開業した飲食店の家賃の一部"
+    ],
+    "cautions": [
+     "住居と兼用の物件は対象外",
+     "親族などからの賃借は対象外",
+     "予算に達し次第終了"
+    ],
+    "status": "不明",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "開業・事業承継"
+    ],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.suginami.tokyo.jp/s121/1753.html": {
+   "src_hash": "30fb50bbe47635d5",
+   "summary": {
+    "name": "杉並区 研究機関活用支援事業補助金",
+    "headline": "研究機関・大学への委託費用を半額補助（上限10万円）",
+    "amount": "2分の1（上限10万円）",
+    "status": "通年・随時",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

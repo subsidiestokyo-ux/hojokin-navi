@@ -127,6 +127,11 @@ def collect_ward(ward, old):
             "src_hash": hashlib.sha256(text.encode()).hexdigest()[:16],
         })
 
+    # 区のサイトに一時的につながらない・弾かれたときは、前回の内容をそのまま使う
+    if not links and not pages and old and (old.get("items") or old.get("pages")):
+        print("  ⚠ 今回は取得できなかったため、前回の内容を使います")
+        return old.get("items", []), old.get("pages", [])
+
     items = []
     for ln in links[:MAX_ITEMS]:
         url = ln["url"]
@@ -157,7 +162,10 @@ def collect_ward(ward, old):
 def main():
     wards = json.loads((ROOT / "wards.json").read_text(encoding="utf-8"))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    only = set(sys.argv[1:])  # 例：python ward_collect.py minato  → 港区だけ
     for w in wards:
+        if only and w["slug"] not in only:
+            continue
         p = OUT_DIR / f"{w['slug']}.json"
         old = json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
         print(f"{w['name']} …")

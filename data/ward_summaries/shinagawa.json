@@ -1,4 +1,364 @@
 {
- "items": {},
+ "items": {
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/energykakakukoutoutaisaku/2458.html": {
+   "src_hash": "b4d88bf1d0651c6b",
+   "summary": {
+    "name": "品川区省エネルギー対策・業務改善設備更新助成金",
+    "headline": "省エネや業務改善のための設備更新を5分の4助成（上限80万円）",
+    "who": "品川区に本社・主な事業所がある中小企業、区内に住所または事業所がある個人事業主",
+    "amount": "対象経費の5分の4（上限80万円）",
+    "restaurant_examples": [
+     "古い業務用冷蔵庫・エアコンを省エネ型に更新",
+     "照明のLED化"
+    ],
+    "cautions": [
+     "先着順で予算に達した時点で締切",
+     "「必ず助成金が出る」「実質無料」などの業者の勧誘に注意（区は特定業者を推奨していない）"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年1月29日 午後5時必着（先着順）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "省エネ・脱炭素",
+     "設備・機器"
+    ],
+    "uses": [],
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/srearchjoseikin/index.html": {
+   "src_hash": "b11735fcc519464b",
+   "summary": {
+    "name": "品川区 利用したい助成金を調べたい方（案内）",
+    "headline": "助成金の自動診断システムの案内",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu/820.html": {
+   "src_hash": "10fa9576573a339f",
+   "summary": {
+    "name": "品川区新製品・新技術開発費助成",
+    "headline": "製造業の新製品開発を助成（令和8年度は受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu/818.html": {
+   "src_hash": "b3edf9647481480a",
+   "summary": {
+    "name": "品川区ソフトウェア開発費助成",
+    "headline": "ソフトウェア開発を助成（令和8年度は受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "IT・キャッシュレス・DX"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu/817.html": {
+   "src_hash": "254273b204c048f6",
+   "summary": {
+    "name": "品川区特許権取得費助成",
+    "headline": "特許の取得費を助成（令和8年度は受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu/810.html": {
+   "src_hash": "7010a11a3fd3580f",
+   "summary": {
+    "name": "品川区 東京都立産業技術研究センター利用料等助成",
+    "headline": "都産技研などの試験・機器利用料を3分の2助成（上限10万円）",
+    "status": "受付中",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu_1/815.html": {
+   "src_hash": "e5e9becd6fe8b03d",
+   "summary": {
+    "name": "品川区展示会出展費助成",
+    "headline": "展示会の出展費を助成（令和8年度は受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu_2/814.html": {
+   "src_hash": "00521d8e24661a25",
+   "summary": {
+    "name": "品川区企業プレゼンス向上認証取得助成",
+    "headline": "ISO・プライバシーマークの取得費を助成（令和8年度は受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu_2/2265.html": {
+   "src_hash": "aeb9690f63a2905f",
+   "summary": {
+    "name": "品川区経営改善支援事業助成金",
+    "headline": "国の経営改善計画づくり支援を使った事業者に上乗せ助成（最大100万円）",
+    "amount": "国の支払い決定額の2分の1（最大10万円または100万円）",
+    "restaurant_examples": [
+     "専門家と経営改善計画（資金繰り・収支の見直し）をつくる"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年2月26日まで（先着順）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu_2/2694.html": {
+   "src_hash": "e896bd60f2e5dcb2",
+   "summary": {
+    "name": "品川区GX・脱炭素経営推進支援事業（省エネ診断等経費助成）",
+    "headline": "省エネ診断の費用を9割助成（上限20万円）",
+    "amount": "対象経費の10分の9（上限20万円）",
+    "restaurant_examples": [
+     "店舗の電気・ガスの使い方を専門家に診断してもらう"
+    ],
+    "status": "受付中",
+    "deadline": "利用・支払いが令和9年2月26日までのもの",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "省エネ・脱炭素"
+    ],
+    "uses": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/shingijutu_2/2695.html": {
+   "src_hash": "d990bbdc520f824b",
+   "summary": {
+    "name": "品川区GX・脱炭素経営推進支援事業（GX・環境認証取得経費助成）",
+    "headline": "SBTやISOなど環境認証の取得費を3分の2助成（上限60万円）",
+    "status": "受付中",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "省エネ・脱炭素"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/jinnzai/807.html": {
+   "src_hash": "6f42bfd00c1679b3",
+   "summary": {
+    "name": "品川区奨学金返還支援助成金",
+    "headline": "若手社員の奨学金返還を肩代わりする企業の負担を助成",
+    "status": "受付中",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/jinnzai/2173.html": {
+   "src_hash": "4d8fbfd4c3e3aecd",
+   "summary": {
+    "name": "品川区インターンシップ事業促進助成",
+    "headline": "工業系学生のインターン受入れ（製造業・情報通信業）を助成",
+    "status": "受付中",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/jinnzai/2272.html": {
+   "src_hash": "e6e3a80e0f602f01",
+   "summary": {
+    "name": "品川区魅力ある職場づくり支援事業助成金",
+    "headline": "働きやすい職場づくりの費用を3分の2助成（上限30万円）",
+    "amount": "対象経費の3分の2（上限30万円）",
+    "restaurant_examples": [
+     "従業員の休憩室の整備",
+     "福利厚生の充実"
+    ],
+    "cautions": [
+     "区内で1年以上事業を営んでいることが条件",
+     "オンライン申請"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年2月26日 午後5時必着",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "働き方・賃上げ"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/jinnzai/2274.html": {
+   "src_hash": "5fca4cd388f9154c",
+   "summary": {
+    "name": "品川区エンジニア確保支援事業助成",
+    "headline": "製造業・情報サービス業のエンジニア採用の紹介手数料を助成",
+    "status": "受付中",
+    "deadline": "令和8年12月28日",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/jinnzai/2417.html": {
+   "src_hash": "64dbc6715f4460f6",
+   "summary": {
+    "name": "品川区人材スキルアップ支援事業助成",
+    "headline": "東京しごと財団のスキルアップ助成に上乗せ（最大60万円）",
+    "cautions": [
+     "東京しごと財団の助成金の交付確定が前提"
+    ],
+    "status": "受付中",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.mics.city.shinagawa.tokyo.jp/joseikin/2696.html": {
+   "src_hash": "c8cac4ca3c8faf10",
+   "summary": {
+    "name": "しながわ女性高度IT人材育成事業助成金",
+    "headline": "女性のAI・ITスキル習得を助成（受付終了）",
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

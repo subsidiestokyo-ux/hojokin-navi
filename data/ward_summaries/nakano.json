@@ -1,4 +1,180 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.tokyo-nakano.lg.jp/jigyosha/sangyoshinko/josei/chusho_r8jinzaikakuho.html": {
+   "src_hash": "b9b9978170a17b11",
+   "summary": {
+    "name": "令和8年度 中野区人材確保総合支援事業補助金",
+    "headline": "採用・定着・育成（リスキリング・資格取得）の費用を補助",
+    "cautions": [
+     "令和8年度分は予算上限に達したため受付終了"
+    ],
+    "status": "受付終了",
+    "deadline": "受付終了（10月8日まで）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "人材・採用・育成"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/jigyosha/sangyoshinko/josei/chusho_r8keieiryoku.html": {
+   "src_hash": "20871ce9dde90378",
+   "summary": {
+    "name": "令和8年度 中野区経営力強化支援事業補助金",
+    "headline": "販路開拓・広報・IT化などの経営力強化の費用を補助",
+    "who": "区内の中小企業者・個人事業主",
+    "uses": [
+     "ビジネスフェアの出展費",
+     "ホームページ制作・広告などの広報費",
+     "IT・DX化の専門家委託費",
+     "多言語化・バリアフリー対応"
+    ],
+    "restaurant_examples": [
+     "お店のホームページ制作や広告",
+     "メニューの多言語化",
+     "店内のバリアフリー対応"
+    ],
+    "cautions": [
+     "予算上限に達した時点で受付終了",
+     "事業実施前の申請が原則"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年1月31日まで（予算に達し次第終了）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "販路・観光・インバウンド",
+     "IT・キャッシュレス・DX"
+    ],
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/jigyosha/sangyoshinko/josei/marukei-yushi.html": {
+   "src_hash": "a72bea4740df85c0",
+   "summary": {
+    "name": "中野区 マル経融資に対する利子補給",
+    "headline": "マル経融資の支払利子の50%を補助",
+    "amount": "1〜12月に支払った利子の50%",
+    "status": "受付中",
+    "deadline": "令和8年12月31日まで（電子申請）",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/jigyosha/sangyoshinko/josei/charenji-josei.html": {
+   "src_hash": "3f52f28b1f922974",
+   "summary": {
+    "name": "商店街チャレンジ戦略支援事業",
+    "headline": "商店街団体のイベント・活性化事業への助成",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/iryohi-jyosei/index.html": {
+   "src_hash": "108687c244cd397a",
+   "summary": {
+    "name": "医療費の助成（区民向け）",
+    "headline": "区民向けの医療費助成",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/bosai/jishin-sonae/chikinotorikumi/0686087720240807145844623.html": {
+   "src_hash": "00fa8ad4800ccab8",
+   "summary": {
+    "name": "コミュニティ助成事業（地域防災会）",
+    "headline": "地域団体向けの助成の報告",
+    "is_business_subsidy": false,
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/faq/chiikikatsudou/gakusyu04.html": {
+   "src_hash": "799c3bb7ed09d8d0",
+   "summary": {
+    "name": "公益活動を支援する助成金（FAQ）",
+    "headline": "地域団体向けの案内",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.tokyo-nakano.lg.jp/kanko/city-promotion/cpjigyoujyoseiboshu.html": {
+   "src_hash": "5252b41f819cc47f",
+   "summary": {
+    "name": "中野区シティプロモーション事業助成（2024年度）",
+    "headline": "2024年度の募集（終了）",
+    "is_business_subsidy": false,
+    "status": "受付終了",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

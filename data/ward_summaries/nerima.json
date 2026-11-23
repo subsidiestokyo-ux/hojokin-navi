@@ -1,4 +1,29 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.nerima.tokyo.jp/jigyoshamuke/jigyosha/shoko/bizichalle.html": {
+   "src_hash": "d4510908ace40feb",
+   "summary": {
+    "name": "練馬区 新規ビジネスチャレンジ補助金",
+    "headline": "商店街の空き店舗に出店する事業者を支援",
+    "who": "商店街の空き店舗に出店し、商店街の活性化に貢献する事業者",
+    "restaurant_examples": [
+     "商店街の空き店舗を借りて飲食店を開業する"
+    ],
+    "cautions": [
+     "金額・受付期間は区のページで確認が必要"
+    ],
+    "status": "不明",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "開業・事業承継"
+    ],
+    "uses": [],
+    "deadline": "要確認",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }

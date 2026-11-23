@@ -1,4 +1,295 @@
 {
- "items": {},
+ "items": {
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/shoryokuka.html": {
+   "src_hash": "f53ad7f3fe79b763",
+   "summary": {
+    "name": "江東区省人化・省力化機器導入補助金",
+    "headline": "人手不足を補うデジタル機器の導入費を3分の2補助（上限80万円）",
+    "amount": "対象経費の3分の2（上限80万円）",
+    "restaurant_examples": [
+     "配膳ロボットや自動券売機の導入",
+     "セルフレジ・モバイルオーダーの導入"
+    ],
+    "cautions": [
+     "例にない機器は事前に区へ相談",
+     "申請後・実績報告後に現地調査あり",
+     "予算上限に達し次第終了"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年1月29日まで",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "設備・機器",
+     "IT・キャッシュレス・DX"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/jigyoshokei.html": {
+   "src_hash": "910f1825a8298142",
+   "summary": {
+    "name": "江東区事業承継設備補助金",
+    "headline": "事業承継をきっかけにした設備の導入・更新を半額補助（上限200万円）",
+    "amount": "2分の1（上限200万円または100万円）",
+    "restaurant_examples": [
+     "店を継ぐときに厨房機器を入れ替える"
+    ],
+    "cautions": [
+     "事前に事業承継計画書を作り、区の経営相談員の確認が必要",
+     "M&Aによる承継は原則対象外"
+    ],
+    "status": "受付中",
+    "deadline": "令和9年1月29日まで",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "開業・事業承継",
+     "設備・機器"
+    ],
+    "uses": [],
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/energy.html": {
+   "src_hash": "c1f7e987a3127e8a",
+   "summary": {
+    "name": "令和8年度江東区エネルギー価格高騰対策補助金",
+    "headline": "水道光熱費・燃料費の負担増に定額補助（最大15万円）",
+    "cautions": [
+     "申請受付は令和8年10月30日で終了"
+    ],
+    "status": "受付終了",
+    "deadline": "受付終了（10月30日）",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "省エネ・脱炭素"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/shoukibokyoudoukenkyuu.html": {
+   "src_hash": "bb66d8c1e4cd3b7f",
+   "summary": {
+    "name": "江東区小規模な産学連携共同研究費補助金",
+    "headline": "大学等との共同研究費を半額補助（上限20万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/25383.html": {
+   "src_hash": "3821ca9115878b04",
+   "summary": {
+    "name": "江東区知的財産権取得費補助",
+    "headline": "社名・屋号や自社商品の商標などの取得費を半額補助",
+    "amount": "2分の1（特許30万円、それ以外10万円まで）",
+    "restaurant_examples": [
+     "店名（屋号）の商標登録"
+    ],
+    "status": "通年・随時",
+    "restaurant_fit": "ふつう",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/66611.html": {
+   "src_hash": "4b8139bb629bc68a",
+   "summary": {
+    "name": "江東区広告掲載費補助",
+    "headline": "自社で開発・製造した製品の広告費を補助（飲食業・小売業は対象外）",
+    "cautions": [
+     "飲食店・小売店は対象外"
+    ],
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/7631.html": {
+   "src_hash": "30774a53e2961241",
+   "summary": {
+    "name": "江東区中小企業団体活動助成",
+    "headline": "登録団体の研修会などを補助",
+    "is_business_subsidy": false,
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/25384.html": {
+   "src_hash": "8831c7873b07e0ad",
+   "summary": {
+    "name": "江東区環境認証等取得費補助",
+    "headline": "ISOやエコアクション21などの認証取得費を半額補助",
+    "status": "通年・随時",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "省エネ・脱炭素"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/7610.html": {
+   "src_hash": "bf4ea3f8723d002f",
+   "summary": {
+    "name": "江東区展示会等出展費補助",
+    "headline": "展示会の出展費を3分の2補助（上限20万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "販路・観光・インバウンド"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/7615.html": {
+   "src_hash": "fce46d76df1d4941",
+   "summary": {
+    "name": "江東区研究開発補助金",
+    "headline": "新製品・新技術の研究開発費を補助（上限300万円）",
+    "status": "不明",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/4643.html": {
+   "src_hash": "0dc86af11acd3677",
+   "summary": {
+    "name": "江東区ホームページ作成費補助",
+    "headline": "初めてホームページを作る費用を半額補助（上限10万円）",
+    "amount": "2分の1（上限10万円）",
+    "restaurant_examples": [
+     "お店の公式ホームページを初めて作る"
+    ],
+    "cautions": [
+     "リニューアルや、過去にホームページがあった場合は対象外"
+    ],
+    "status": "通年・随時",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "販路・観光・インバウンド",
+     "IT・キャッシュレス・DX"
+    ],
+    "uses": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/66612.html": {
+   "src_hash": "47889b8b9859da9e",
+   "summary": {
+    "name": "江東区都立産業技術研究センター利用補助金",
+    "headline": "都産技研の利用料を3分の2補助（年15万円まで）",
+    "status": "通年・随時",
+    "restaurant_fit": "低い",
+    "purposes": [
+     "その他"
+    ],
+    "uses": [],
+    "restaurant_examples": [],
+    "cautions": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "amount": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  },
+  "https://www.city.koto.lg.jp/102020/sangyoshigoto/chusho/hojokin/80920.html": {
+   "src_hash": "3fae27e1cd14e878",
+   "summary": {
+    "name": "江東区創業支援事務所等賃料補助金",
+    "headline": "区内で創業する人の事務所・店舗の家賃を補助（月最大5万円）",
+    "amount": "月額賃料の1/4以内（月上限5万円または3万円）",
+    "restaurant_examples": [
+     "区内で開業した飲食店の家賃の一部"
+    ],
+    "cautions": [
+     "申請が18件を超える場合は抽選",
+     "令和9年3月31日までに賃貸借契約が始まっていることが条件"
+    ],
+    "status": "不明",
+    "restaurant_fit": "高い",
+    "purposes": [
+     "開業・事業承継"
+    ],
+    "uses": [],
+    "deadline": "要確認",
+    "who": "募集要項で確認が必要",
+    "is_business_subsidy": true,
+    "model": "claude-session"
+   }
+  }
+ },
  "pages": {}
 }
