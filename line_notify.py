@@ -163,6 +163,14 @@ def main():
 
     if sent is None:
         print(f"初回のため、今ある {len(cands)}件を送信済みとして記録します（今回は送りません）")
+        token = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "").strip()
+        if token:  # トークンが正しいかだけ確認する（メッセージは送らない）
+            try:
+                info = api("GET", "/info", token)
+                print(f"  LINEとの接続OK：{info.get('displayName')}（{info.get('basicId')}）")
+            except urllib.error.HTTPError as e:
+                print(f"❌ LINEのトークンが正しくないようです（{e.code}）。登録し直してください")
+                sys.exit(1)
         if not args.dry_run:
             SENT.write_text(json.dumps({"sent": sorted(c["key"] for c in cands), "history": []},
                                        ensure_ascii=False, indent=1), encoding="utf-8")
