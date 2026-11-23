@@ -1,0 +1,69 @@
+# 毎朝6時（日本時間）に、補助金の収集 → AI要約 → サイト生成 → 公開 を自動で行う
+name: daily-update
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # UTC 21:00 = 日本時間 6:00
+  workflow_dispatch:         # GitHubの画面から手動でも実行できる
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: 補助金を集める
+        run: python collect.py
+
+      - name: 区のサイトから集める
+        run: python ward_collect.py
+
+      - name: AIで要約する
+        run: |
+          python summarize.py
+          python ward_extract.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: サイトを作る
+        run: python build.py
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: 集めたデータを保存（次回の差分判定に使う）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: daily update"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "shinjuku",
+    "name": "新宿区",
+    "sources": [
+      {
+        "url": "https://www.city.shinjuku.lg.jp/jigyo/index13.html",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.shinjuku.lg.jp/jigyo/biz00_100007.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "shibuya",
+    "name": "渋谷区",
+    "sources": [
+      {
+        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/syoutengaishinkoujigyou/",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/shoko-sodan/",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "minato",
+    "name": "港区",
+    "sources": [
+      {
+        "url": "https://minato-sansin.com/corporate-subsidy/",
+        "inline": false
+      },
+      {
+        "url": "https://www.city.minato.tokyo.jp/sangyousinkou/sangyo/chushokigyo/hanrokakudai.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "chuo",
+    "name": "中央区",
+    "sources": [
+      {
+        "url": "https://www.city.chuo.lg.jp/shigoto/kigyoushien/hojokin/index.html",
+        "inline": false
+      }
+    ]
+  },
+  {
+    "slug": "taito",
+    "name": "台東区",
+    "sources": [
+      {
+        "url": "https://taito-sangyo.jp/subsidy/subsidy-1/",
+        "inline": true
+      },
+      {
+        "url": "https://www.city.taito.lg.jp/bunka_kanko/jigyoukeiei/index.html",
+        "inline": false
+      }
+    ]
+  }
+]
