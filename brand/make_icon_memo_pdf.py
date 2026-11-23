@@ -1,4 +1,4 @@
-"""メモ帳と鉛筆のアイコンを、Canvaなどで文字・図形を編集できるベクターPDFにする（640×640）"""
+"""シンプルなメモ帳と鉛筆（白多め）のアイコンを、Canvaなどで文字・図形を編集できるベクターPDFにする（640×640）"""
 from pathlib import Path
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
@@ -49,63 +49,36 @@ for i in range(0, S + 1, 24):
 
 text_center(85, "東京都・飲食店向け", 44)
 
-# メモ帳（座標は上から測った値）
-x0, y0, x1, y1 = 145, 170, 420, 425
-fill(BLUE)
-c.roundRect(x0 + 12, Y(y1 + 12), x1 - x0, y1 - y0, 22, stroke=0, fill=1)   # ずらし影
+# メモ帳（座標は上から測った値）：白い紙＋青い輪郭、リング3つ、書き込みの線3本
+x0, y0, x1, y1 = 165, 185, 415, 415
 fill(WHITE)
-stroke(BLUE, 9)
-c.roundRect(x0, Y(y1), x1 - x0, y1 - y0, 22, stroke=1, fill=1)            # 紙
-fill(BLUE)
-c.roundRect(x0, Y(y0 + 60), x1 - x0, 60, 22, stroke=0, fill=1)             # 上の帯
-c.rect(x0, Y(y0 + 60), x1 - x0, 25, stroke=0, fill=1)
-for i in range(5):                                                         # リング
-    cx = x0 + 45 + i * (x1 - x0 - 90) / 4
-    fill(WHITE)
-    stroke(BLUE, 4)
-    c.roundRect(cx - 5.5, Y(y0 + 30), 11, 40, 5.5, stroke=1, fill=1)
-for i in range(4):                                                         # 罫線・チェック・書き込み
-    y = y0 + 95 + i * 46
-    stroke(BLUE_SOFT, 4)
-    c.line(x0 + 30, Y(y + 20), x1 - 30, Y(y + 20))
-    stroke(BLUE, 4)
-    c.roundRect(x0 + 35, Y(y + 18), 24, 24, 5, stroke=1, fill=0)
-    if i < 3:
-        c.setLineWidth(6)
-        p = c.beginPath()
-        p.moveTo(x0 + 40, Y(y + 5))
-        p.lineTo(x0 + 47, Y(y + 13))
-        p.lineTo(x0 + 60, Y(y - 7))
-        c.drawPath(p, stroke=1, fill=0)
+stroke(BLUE, 6)
+c.roundRect(x0, Y(y1), x1 - x0, y1 - y0, 20, stroke=1, fill=1)
+for i in range(3):
+    cx = x0 + (x1 - x0) * (i + 1) / 4
+    stroke(BLUE, 4.5)
+    c.roundRect(cx - 6, Y(y0 + 20), 12, 38, 6, stroke=1, fill=1)
+for i, w in enumerate((0.70, 0.52, 0.62)):
+    y = y0 + 75 + i * 47.5
     fill(BLUE_MID)
-    c.roundRect(x0 + 75, Y(y + 11), (x1 - x0 - 115) * [0.55, 0.40, 0.50, 0.30][i], 12, 6, stroke=0, fill=1)
+    c.roundRect(x0 + 35, Y(y + 10), (x1 - x0 - 70) * w, 10, 5, stroke=0, fill=1)
 
-# 鉛筆（横向きに描いて回転。ペン先が左下）
+# 鉛筆：白い軸に青い輪郭。ペン先が3本目の線の先（左下）
 c.saveState()
-c.translate(300, Y(345))      # ペン先の位置
+c.translate(298, Y(337))
 c.rotate(40)
-L, T, tip = 280, 55, 75
-fill(BLUE)
-c.rect(tip + 9, -T / 2 - 9, L - tip, T, stroke=0, fill=1)                  # 影
+L, T, tip = 260, 48, 65
 fill(WHITE)
-stroke(BLUE, 6)
+stroke(BLUE, 5.5)
 p = c.beginPath()
-p.moveTo(0, 0); p.lineTo(tip, T / 2); p.lineTo(tip, -T / 2); p.close()
-c.drawPath(p, stroke=1, fill=1)                                            # 削った部分
+p.moveTo(0, 0); p.lineTo(tip, T / 2); p.lineTo(L - 45, T / 2); p.lineTo(L - 45, -T / 2); p.lineTo(tip, -T / 2); p.close()
+c.drawPath(p, stroke=1, fill=1)                       # 軸と削った部分
+c.line(tip, T / 2, tip, -T / 2)
+c.roundRect(L - 45, -T / 2, 45, T, 11, stroke=1, fill=1)  # 消しゴム
 fill(BLUE)
 p = c.beginPath()
-p.moveTo(0, 0); p.lineTo(26, 9.5); p.lineTo(26, -9.5); p.close()
-c.drawPath(p, stroke=0, fill=1)                                            # 芯
-fill(BLUE_SOFT)
-c.rect(tip, -T / 2, L - tip - 65, T, stroke=1, fill=1)                     # 軸
-stroke(BLUE_MID, 5)
-c.line(tip, T / 6, L - 65, T / 6)
-c.line(tip, -T / 6, L - 65, -T / 6)
-fill(WHITE)
-stroke(BLUE, 6)
-c.rect(L - 65, -T / 2, 30, T, stroke=1, fill=1)                            # 金具
-fill(BLUE_MID)
-c.roundRect(L - 38, -T / 2, 38, T, 12, stroke=1, fill=1)                   # 消しゴム
+p.moveTo(0, 0); p.lineTo(22, 8); p.lineTo(22, -8); p.close()
+c.drawPath(p, stroke=0, fill=1)                       # 芯
 c.restoreState()
 
 text_center(455, "補助金ナビ", 76)
