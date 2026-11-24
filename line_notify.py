@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""LINE公式アカウントの友だち全員に「今週の新着補助金」と「締切が近い補助金」を送る（週1回）。
+"""LINE公式アカウントの友だち全員に「今週の新着補助金」を送る（週1回）。
 
-- 送った補助金は data/line_sent.json に記録し、同じものを二度「新着」として送らない
+- 送った補助金は data/line_sent.json に記録し、同じものは二度と送らない（締切間近でも再送しない）
+- 新着のうち締切まで DEADLINE_DAYS 日以内のものには「⏰締切間近」の印をつけて先頭に並べる
+- 新着が無い週は送らない
+- 載せるのは MAX_NEW 件まで。残りは「ほか○件はサイトで」と案内する（残りも送信済みとして記録）
 - 初回（記録が無いとき）は、今ある補助金を「送信済み」として記録するだけで送らない
   （開始直後に大量の補助金が一度に届くのを防ぐため）
 - 無料プランは月の送信数に上限があるため、残りが足りないときは送らない
@@ -29,8 +32,7 @@ JST = timezone(timedelta(hours=9))
 API = "https://api.line.me/v2/bot"
 SITE_NAME = "わかりやすい補助金ナビ"
 MAX_NEW = 5        # 1回に載せる新着の上限
-MAX_DEADLINE = 5   # 1回に載せる「締切が近い」の上限
-DEADLINE_DAYS = 14  # 何日以内の締切を「近い」とするか
+DEADLINE_DAYS = 14  # 何日以内の締切に「⏰締切間近」の印をつけるか
 GOOD_FIT = ("高い", "ふつう")
 
 
@@ -87,26 +89,28 @@ def fmt_end(end):
     return f"{d.month}/{d.day}締切"
 
 
-def build_message(new_items, soon_items, today):
+def is_soon(x, today):
+    """締切まで DEADLINE_DAYS 日以内か"""
+    if not x["end"]:
+        return False
+    limit = (today + timedelta(days=DEADLINE_DAYS)).isoformat()
+    return today.isoformat() <= x["end"][:10] <= limit
+
+
+def build_message(new_items, today):
     base = site_url()
-    lines = [f"【{SITE_NAME}】{today.month}/{today.day} の補助金情報"]
-    if new_items:
-        lines += ["", f"■ 今週の新着（{len(new_items)}件）"]
-        for x in new_items[:MAX_NEW]:
-            lines.append(f"・{short(x['name'], 40)}")
-            info = "／".join(v for v in (short(x["amount"], 40), fmt_end(x["end"])) if v)
-            if info:
-                lines.append(f"　{info}")
-            if base:
-                lines.append(f"　{base}{x['path']}")
-        if len(new_items) > MAX_NEW:
-            lines.append(f"　ほか{len(new_items) - MAX_NEW}件はサイトで")
-    if soon_items:
-        lines += ["", f"■ 締切が近い補助金（{DEADLINE_DAYS}日以内）"]
-        for x in soon_items[:MAX_DEADLINE]:
-            lines.append(f"・{short(x['name'], 40)}（{fmt_end(x['end'])}）")
-            if base:
-                lines.append(f"　{base}{x['path']}")
+    lines = [f"【{SITE_NAME}】{today.month}/{today.day} の補助金情報",
+             "", f"■ 今週の新着（{len(new_items)}件）"]
+    for x in new_items[:MAX_NEW]:
+        mark = "⏰締切間近 " if is_soon(x, today) else ""
+        lines.append(f"・{mark}{short(x['name'], 40)}")
+        info = "／".join(v for v in (short(x["amount"], 40), fmt_end(x["end"])) if v)
+        if info:
+            lines.append(f"　{info}")
+        if base:
+            lines.append(f"　{base}{x['path']}")
+    if len(new_items) > MAX_NEW:
+        lines.append(f"　ほか{len(new_items) - MAX_NEW}件はサイトで")
     lines += ["", "最新の条件は、必ず公式の募集要項でご確認ください。"]
     if base:
         lines.append(f"一覧はこちら：{base}/")
@@ -179,17 +183,15 @@ def main():
 
     done = set(sent["sent"])
     new_items = [c for c in cands if c["key"] not in done]
-    new_items.sort(key=lambda c: (c["fit"] != "高い", c["end"] or "9999"))
-    limit = (today + timedelta(days=DEADLINE_DAYS)).isoformat()
-    soon = [c for c in cands if c["end"] and today.isoformat() <= c["end"][:10] <= limit
-            and c["key"] not in {n["key"] for n in new_items}]
-    soon.sort(key=lambda c: c["end"])
+    # 締切間近 → 相性「高い」 → 締切が早い順
+    new_items.sort(key=lambda c: (not is_soon(c, today), c["fit"] != "高い", c["end"] or "9999"))
+    soon = sum(is_soon(c, today) for c in new_items)
 
-    if not new_items and not soon:
-        print("新着も締切間近もないため、今週は送りません")
+    if not new_items:
+        print("新着がないため、今週は送りません")
         return
 
-    text = build_message(new_items, soon, today)
+    text = build_message(new_items, today)
     print("----- 送る文面 -----")
     print(text)
     print("--------------------")
@@ -213,9 +215,9 @@ def main():
 
     sent["sent"] = sorted(done | {c["key"] for c in new_items})
     sent["history"] = (sent.get("history", []) + [{
-        "date": today.isoformat(), "new": len(new_items), "deadline": len(soon)}])[-52:]
+        "date": today.isoformat(), "new": len(new_items), "deadline": soon}])[-52:]
     SENT.write_text(json.dumps(sent, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"✅ 送信しました（新着 {len(new_items)}件、締切間近 {len(soon)}件）")
+    print(f"✅ 送信しました（新着 {len(new_items)}件、うち締切間近 {soon}件）")
 
 
 if __name__ == "__main__":
